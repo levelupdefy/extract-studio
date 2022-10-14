@@ -1,0 +1,95 @@
+@font-face {
+    font-family:f1;
+    src: url('./fnt/f1.woff2');
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --gray:#8f8f8f;
+}
+html, body{
+    margin:0;
+    padding:0;
+    background:var(--black);
+    color:var(--white);
+    font-family:f1;
+    font-weight:400;
+    font-size:1.1rem;
+    letter-spacing:0.1rem;
+}
+.--div{
+    padding:3%;
+    padding-left:4%;
+    padding-right:4%;
+}
+.--grid{
+    display:grid;
+    grid-template-columns:60% 40%;
+}
+.--grid2{
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+.--flex{
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+}
+.--nolink{
+    text-decoration:none;
+    color:var(--gray);
+    transition:0.2s ease-in-out;
+}
+.--nolink:hover{
+    color:var(--white);
+}
+.--white{
+    color:var(--white);
+}
+.--fnt{
+    font-weight:400;
+    font-size:1.125rem;
+}
+.--spil:hover{
+    letter-spacing:1rem;
+}
+svg{
+    fill:var(--white);
+    stroke:var(--white);
+    transition:0.7s ease-in;
+}
+
+svg:hover{
+    fill:var(--gray);
+    stroke:var(--gray);
+    transition:0.7s ease-out;
+}
+g:hover{
+    display:flex;
+    gap:10rem;
+}
+svg:hover .--path1{
+    transition:0.2s ease;
+    transition-delay:0.7s;
+    transform: scaleY(-1);
+    display:none;
+}
+svg:hover .--path5{
+    transition:0.2s ease;
+    transform: scaleY(10);
+    transition-delay:0.7s;
+}
+svg:hover .--path6{
+    fill:transparent;
+}
+svg:hover .--path7{
+    fill:transparent;
+}
+
+
+.--nolink:hover .--path1{
+    transition:0.2s ease;
+    transition-delay:0.7s;
+    transform: scaleY(-1);
+    display:none;
+}
