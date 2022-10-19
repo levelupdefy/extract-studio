@@ -1,0 +1,52 @@
+body {
+    overflow-x: hidden;
+}
+
+@keyframes pall {
+    from {
+        top: 0px;
+        left: -1000px;
+        width: 100%;
+    }
+
+    to {
+        top: 0px;
+        left: 0px;
+
+    }
+}
+
+@keyframes pall2 {
+    from {
+        top: 0px;
+        left: 1000px;
+        width: 100%;
+    }
+
+    to {
+        top: 0px;
+        left: 0px;
+
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+::selection {
+    color: #fff;
+    background: #8f8f8f;
+}

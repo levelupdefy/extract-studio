@@ -1,7 +1,9 @@
+@import "./anime.css";
 @font-face {
     font-family:f1;
     src: url('./fnt/f1.woff2');
 }
+
 :root{
     --black:#000;
     --white:#fff;
@@ -25,6 +27,9 @@ html, body{
 .--grid{
     display:grid;
     grid-template-columns:60% 40%;
+    animation-name:pall;
+    animation-duration:3s;
+    position: relative;
 }
 .--grid2{
     display:grid;
@@ -90,6 +95,16 @@ a:hover .--path5{
     transition:0.2s ease;
     transition-delay:0.7s;
     transform: scaleY(-1);
+}
+.--svg{
+    animation-name:pall;
+    animation-duration:2s;
+    position: relative;
+}
+.--tr{
+    animation-name:pall2;
+    animation-duration:2s;
+    position: relative;
 }
 @media screen and (max-width:767px){
     body{
